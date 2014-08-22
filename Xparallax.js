@@ -6,7 +6,23 @@
 
 (function($){
 	var $window = $(window);
+
+	// vertical scroll limits
+	var scrollMinY = 0,
+		scrollMaxY = document.body.scrollHeight - window.innerHeight;
+
+	// update value on resize
+	window.onresize = function () {
+	    scrollMaxY = document.body.scrollHeight - window.innerHeight;
+	};
+
+	// disable vertical scroll
+	document.onscroll = function () {    
+	    if (window.scrollY <= scrollMinY) scrollTo(window.scrollX, scrollMinY);
+	    if (window.scrollY >= scrollMaxY) scrollTo(window.scrollX, scrollMaxY);
+	};
 	
+	// where the magic happens
 	$.fn.Xparallax = function(speedFactor, ypos){
 		var $$ = $(this);
 
@@ -19,8 +35,7 @@
 			var scrollPos = $window.scrollTop();
 			
 			$$.each(function(){
-				//console.log('this.each');
-				//console.log('scrollpos ', scrollPos)
+				//console.log('scrollpos ', scrollPos);
 
 				//calculation for x position
 				var xpos = Math.round(-(scrollPos * speedFactor));
