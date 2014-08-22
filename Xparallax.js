@@ -1,6 +1,6 @@
 
 /*
-* Horizontal scrolling parallax
+* Horizontal parallax for vertical scroll
 * author: Montgomery Hatch
 */
 
@@ -14,20 +14,20 @@
 		if (arguments.length < 1 || speedFactor === null) speedFactor = 0.1;
 		if (arguments.length < 2 || ypos === null) ypos = "50%";	
 		
-		console.log('ypos ', ypos);
 		//function called when window is scrolled
 		function update(){
-			var scrollpos = $window.scrollTop();
-			console.log('funct call');
+			var scrollPos = $window.scrollTop();
+			
 			$$.each(function(){
-			console.log('this.each');
-			console.log('scrollpos ', scrollpos)
+				//console.log('this.each');
+				//console.log('scrollpos ', scrollpos)
+
 				//calculation for x position
-				var xpos = Math.round(-(scrollpos * speedFactor));
-				console.log('xpos ', xpos);
-				//change inline style position attribute
+				var xpos = Math.round(-(scrollPos * speedFactor));
+				
+				//change background-position style attribute
 				$$.css('background-position', xpos + "px " + ypos);
-				console.log('background-position', xpos + "px " + ypos);
+				
 			});
 		}
 
@@ -37,7 +37,7 @@
 })(jQuery);
 
 
-// call
+// call function
 (function($) {
   'use strict';
 
