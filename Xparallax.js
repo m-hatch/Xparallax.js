@@ -16,7 +16,7 @@
 	    scrollMaxY = document.body.scrollHeight - window.innerHeight;
 	};
 
-	// disable vertical scroll
+	// disable vertical scroll bounce
 	document.onscroll = function () {    
 	    if (window.scrollY <= scrollMinY) scrollTo(window.scrollX, scrollMinY);
 	    if (window.scrollY >= scrollMaxY) scrollTo(window.scrollX, scrollMaxY);
@@ -35,7 +35,6 @@
 			var scrollPos = $window.scrollTop();
 			
 			$$.each(function(){
-				//console.log('scrollpos ', scrollPos);
 
 				//calculation for x position
 				var xpos = Math.round(-(scrollPos * speedFactor));
@@ -52,14 +51,14 @@
 })(jQuery);
 
 
-// call function
+// plugin call
 (function($) {
-  'use strict';
+	'use strict';
 
-  $(document).ready(function() {
+  	$(document).ready(function() {
 
-	$('#fixed-bg').Xparallax(1.2);
+		$('#fixed-bg').Xparallax(1.2);
 
-  });
-
+  	});
+  	
 })(jQuery);
