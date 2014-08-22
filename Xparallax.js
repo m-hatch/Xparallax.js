@@ -20,7 +20,7 @@
 			
 			$$.each(function(){
 				//console.log('this.each');
-				//console.log('scrollpos ', scrollpos)
+				//console.log('scrollpos ', scrollPos)
 
 				//calculation for x position
 				var xpos = Math.round(-(scrollPos * speedFactor));

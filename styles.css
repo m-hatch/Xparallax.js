@@ -43,18 +43,6 @@ table {
 	border-spacing: 0;
 }
 /* end reset */
-html, body {
-    height: 100%;
-    overflow: hidden;
-}
-#container{
-	position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: auto;
-}
 #fixed-bg{
 	background: url(img/polina.png) repeat-x center center;
 	position:fixed;
