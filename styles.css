@@ -69,6 +69,14 @@ html, body{
 	display:table-cell;
 	vertical-align:middle;
 }
+.center{
+	width:80%;
+	margin:0 auto;
+}
+.img-responsive{
+	width:100%;
+	height:auto;
+}
 h1{
 	font-size:80px;
 	font-weight: 600;
