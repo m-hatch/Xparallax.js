@@ -45,6 +45,9 @@ table {
 /* end reset */
 
 /* styles */
+html, body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
 #fixed-bg{
 	background: url(img/polina.png) repeat-x;
 	background-size:auto 100%;
@@ -68,20 +71,28 @@ table {
 }
 h1{
 	font-size:80px;
+	font-weight: 600;
 	line-height: 100px;
 	margin-bottom: 18px;
+	text-shadow: 5px 5px 5px #696969;
 }
 h2{
 	font-size:50px;
 	line-height: 56px;
 	margin-bottom: 18px;
+	text-shadow: 3px 3px 3px #696969;
 }
 h3{
 	font-size:36px;
 	line-height: 40px;
+	text-shadow: 2px 2px 2px #696969;
+}
+p{
+	text-shadow:
+	1px 1px 1px #7e7e7e;
 }
 #arrow{
-	font-size:80px;
+	font-size:70px;
 	text-align:center;
 	margin-top: 80px;
 }
@@ -89,6 +100,7 @@ h3{
 	-ms-transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
+    text-shadow: -3px -3px 3px #545454;
 }
 /* arrow animation */
 @-webkit-keyframes bounce { 
