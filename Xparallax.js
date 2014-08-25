@@ -57,7 +57,7 @@
 
   	$(document).ready(function() {
 
-		$('#fixed-bg').Xparallax(1.2);
+		$('#fixed-bg').Xparallax(0.8);
 
   	});
   	

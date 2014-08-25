@@ -47,9 +47,10 @@ table {
 /* styles */
 html, body{
 	font-family: 'Source Sans Pro', sans-serif;
+	color:#FFFFFF;
 }
 #fixed-bg{
-	background: url(img/polina.png) repeat-x;
+	background: url(img/sky-cloud-white.jpg) repeat-x;
 	background-size:auto 100%;
 	position:fixed;
 	z-index:-100;
@@ -57,7 +58,6 @@ html, body{
 	height:100%;
 }
 .content{
-	color:#FFFFFF;
 	width:66%;
 	margin:0 auto;
 }
@@ -76,6 +76,13 @@ html, body{
 .img-responsive{
 	width:100%;
 	height:auto;
+}
+.github{
+	padding-left:17%;
+	padding-right:17%;
+	padding-top:80px;
+	padding-bottom:80px;
+	background-color:rgba(222,222,222,0.6);
 }
 h1{
 	font-size:80px;
@@ -98,6 +105,9 @@ h3{
 p{
 	text-shadow:
 	1px 1px 1px #7e7e7e;
+}
+.github h2{
+	text-shadow: 3px 3px 5px #2b2b2b;
 }
 #arrow{
 	font-size:70px;
