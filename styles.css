@@ -83,10 +83,11 @@ html, body{
 	height:100vh;
 }
 .github{
+	display:table-cell;
+	vertical-align:middle;
 	padding-left:17%;
 	padding-right:17%;
-	padding-top:80px;
-	padding-bottom:80px;
+	padding-bottom:148px; /* credits height */
 }
 .credits{
 	position:absolute;
@@ -94,8 +95,8 @@ html, body{
 	width:100%;
 	padding-left:17%;
 	padding-right:17%;
-	padding-top:50px;
-	padding-bottom:50px;
+	padding-top:30px;
+	padding-bottom:30px;
 	background-color:#4682B4;
 }
 h1{
@@ -120,8 +121,24 @@ p{
 	text-shadow:
 	1px 1px 1px #7e7e7e;
 }
+a{
+	color:#fff;
+	text-decoration:none;
+}
+a:hover{
+	text-decoration:underline;
+}
 .github h2{
 	text-shadow: 3px 3px 5px #2b2b2b;
+}
+.credits p{
+	font-size:20px;
+	font-weight:300;
+	line-height:24px;
+}
+.font-normal{
+	font-weight:400;
+	padding-right:5px;
 }
 #arrow{
 	font-size:70px;
@@ -134,6 +151,7 @@ p{
     transform: rotate(180deg);
     text-shadow: -3px -3px 3px #545454;
 }
+
 /* arrow animation */
 @-webkit-keyframes bounce { 
     0%, 10%, 25%, 40%, 100% {-webkit-transform: translateY(0);} 
