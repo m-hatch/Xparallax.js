@@ -6,7 +6,7 @@
 
 (function($){
 	var $window = $(window);
-
+/*
 	// vertical scroll limits
 	var scrollMinY = 0,
 		scrollMaxY = document.body.scrollHeight - window.innerHeight;
@@ -21,7 +21,7 @@
 	    if (window.scrollY <= scrollMinY) scrollTo(window.scrollX, scrollMinY);
 	    if (window.scrollY >= scrollMaxY) scrollTo(window.scrollX, scrollMaxY);
 	};
-	
+*/	
 	// where the magic happens
 	$.fn.Xparallax = function(speedFactor, ypos){
 		var $$ = $(this);
