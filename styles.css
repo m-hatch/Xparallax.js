@@ -117,7 +117,7 @@ a:hover{
 .github{
 	display:table-cell;
 	vertical-align:middle;
-	padding-bottom:148px; /* credits height */
+	padding-bottom:172px; /* credits height */
 }
 .github h2{
 	text-shadow: 3px 3px 5px #2b2b2b;
@@ -146,6 +146,7 @@ a:hover{
 }
 .copy{
 	text-align:center;
+	/*margin-top:1em;*/
 }
 #arrow{
 	font-size:70px;
