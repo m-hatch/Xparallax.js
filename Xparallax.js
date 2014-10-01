@@ -55,10 +55,6 @@
 (function($) {
 	'use strict';
 
-  	$(document).ready(function() {
-
-		$('#fixed-bg').Xparallax(0.8);
-
-  	});
+	$('#fixed-bg').Xparallax(0.8);
   	
 })(jQuery);
